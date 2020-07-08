@@ -1,0 +1,70 @@
+/*----------------------------------NAVIGATION SECTION-------------------*/
+/*Navigation bar customised using CSS to make height of my logo bigger on the page*/
+.navbar-brand img {
+    height: 100px; 
+    padding-left: 0px;
+}
+
+/* Modify the backgorund color */ 
+.navbar-custom { 
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.1); /* Black background with 0.5 opacity */
+} 
+
+/*Navigation link items arranged in the Navbar to provide enough room visually*/
+.navbar-nav li{
+  padding:0, 30px;
+  margin-left:50px;
+  margin-right:15px;
+}
+
+/*Navigation link items in the Navbar changed to the colour white*/
+#navbar ul li a{
+    color: white;
+}
+
+/*Navigation link items animation added to change colours when the mouse covers it*/
+#navbar ul li a:hover{
+    color: green!important;
+}
+
+.navbar-custom .navbar-toggler {
+    background-color: red;
+    border-color: black;
+}
+.navbar-toggler:focus, .navbar-toggler:hover {
+    text-decoration: none;
+}
+
+button .navbar-toggler{
+    color: plum;
+}
+
+/*-------HOME PAGE BACKGROUND--------*/
+#hero-image {
+    height: 700px;
+    width: 100%;
+    background: url("https://thehappypuppysite.com/wp-content/uploads/2019/05/cute-dog-quotes-HP-long.jpg") no-repeat center center;/*Background image repeat removed and center in the middle of the screen*/
+    background-size: cover;/*STRETCH image to fill entire background*/
+
+    animation-name: hero-zoom; /*zoom effect added*/
+    animation-duration: 8s; /*zoom effect lasts for 8 seconds*/
+    animation-fill-mode: forwards; /*image appears to be moving forwards*/
+}
+
+hero-outer {
+    height: 700px; /*same as hero image*/
+    width: 100%; /*same as hero image*/
+    overflow: hidden;
+    position: relative;
+}
+
+@keyframes hero-zoom{ /*image scales up from 100% - 110%*/
+    from{
+        transform: scale(1)
+    }
+    to{
+        transform: scale(1.1)
+    }
+}
+/*-------HOME PAGE BACKGROUND END--------*/
